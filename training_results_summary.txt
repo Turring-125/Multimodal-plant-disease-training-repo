@@ -1,0 +1,71 @@
+============================================================
+  FINAL RESULTS SUMMARY
+============================================================
+  Rice  -- Val Accuracy  : 99.48%
+  Wheat -- Val Accuracy  : 92.67%
+  Wheat -- Test Accuracy : 92.00%
+============================================================
+
+  Models saved to : d:\clg\major project\Project folder\models
+  Plots saved to  : d:\clg\major project\Project folder\plots
+============================================================
+
+RICE CLASSIFICATION REPORT (VALIDATION):
+                       precision    recall  f1-score   support
+
+Bacterial Leaf Blight       1.00      0.99      1.00       121
+           Brown Spot       1.00      0.98      0.99       132
+    Healthy Rice Leaf       1.00      1.00      1.00       129
+           Leaf Blast       0.99      0.99      0.99       136
+           Leaf scald       0.98      1.00      0.99       127
+        Sheath Blight       1.00      1.00      1.00       120
+
+             accuracy                           0.99       765
+            macro avg       0.99      0.99      0.99       765
+         weighted avg       0.99      0.99      0.99       765
+
+============================================================
+
+WHEAT CLASSIFICATION REPORT (VALIDATION):
+                      precision    recall  f1-score   support
+               Aphid       0.95      1.00      0.98        20
+          Black Rust       1.00      1.00      1.00        20
+               Blast       1.00      1.00      1.00        20
+          Brown Rust       1.00      1.00      1.00        20
+     Common Root Rot       0.91      1.00      0.95        20
+Fusarium Head Blight       1.00      1.00      1.00        20
+             Healthy       1.00      0.10      0.18        20
+         Leaf Blight       0.95      1.00      0.98        20
+              Mildew       1.00      1.00      1.00        20
+                Mite       1.00      0.90      0.95        20
+            Septoria       1.00      0.95      0.97        20
+                Smut       1.00      1.00      1.00        20
+            Stem fly       1.00      1.00      1.00        20
+            Tan spot       0.95      0.95      0.95        20
+         Yellow Rust       0.54      1.00      0.70        20
+
+            accuracy                           0.93       300
+           macro avg       0.95      0.93      0.91       300
+        weighted avg       0.95      0.93      0.91       300
+
+WHEAT CLASSIFICATION REPORT (TEST):
+                      precision    recall  f1-score   support
+               Aphid       0.98      0.98      0.98        50
+          Black Rust       1.00      0.98      0.99        50
+               Blast       0.94      1.00      0.97        50
+          Brown Rust       0.98      1.00      0.99        50
+     Common Root Rot       0.96      1.00      0.98        50
+Fusarium Head Blight       1.00      1.00      1.00        50
+             Healthy       1.00      0.08      0.15        50
+         Leaf Blight       0.89      0.96      0.92        50
+              Mildew       1.00      0.98      0.99        50
+                Mite       1.00      0.92      0.96        50
+            Septoria       1.00      0.92      0.96        50
+                Smut       1.00      1.00      1.00        50
+            Stem fly       0.98      1.00      0.99        50
+            Tan spot       0.94      0.98      0.96        50
+         Yellow Rust       0.54      1.00      0.70        50
+
+            accuracy                           0.92       750
+           macro avg       0.95      0.92      0.90       750
+        weighted avg       0.95      0.92      0.90       750

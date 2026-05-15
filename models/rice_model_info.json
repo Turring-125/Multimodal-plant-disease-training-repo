@@ -1,30 +1,29 @@
 {
   "crop": "rice",
-  "architecture": "EfficientNetB0 (Transfer Learning)",
-  "input_size": 224,
-  "num_classes": 10,
+  "framework": "PyTorch",
+  "architecture": "EfficientNetV2S (torchvision pretrained on ImageNet)",
+  "input_size": 300,
+  "num_classes": 6,
   "class_names": [
-    "bacterial_leaf_blight",
-    "bacterial_leaf_streak",
-    "bacterial_panicle_blight",
-    "blast",
-    "brown_spot",
-    "dead_heart",
-    "downy_mildew",
-    "hispa",
-    "normal",
-    "tungro"
+    "Bacterial Leaf Blight",
+    "Brown Spot",
+    "Healthy Rice Leaf",
+    "Leaf Blast",
+    "Leaf scald",
+    "Sheath Blight"
   ],
-  "validation_accuracy": 0.8942815953868333,
-  "techniques_used": [
-    "Transfer Learning (EfficientNetB0)",
-    "Data Augmentation (Flip, Rotate, Zoom, Contrast, Brightness)",
-    "Progressive Fine-tuning",
-    "Class Weight Balancing",
+  "validation_accuracy": 0.9947712418300654,
+  "techniques": [
+    "Transfer Learning (EfficientNetV2S ImageNet weights)",
+    "PyTorch native Windows CUDA",
+    "Mixed Precision (torch.amp autocast + GradScaler)",
+    "Two-phase training: frozen head -> top-40% fine-tune",
+    "Cosine Annealing LR (phase 2) + ReduceLROnPlateau (phase 1)",
+    "WeightedRandomSampler + CrossEntropy class weights",
     "Label Smoothing (0.1)",
-    "Dropout (0.4)",
-    "ReduceLROnPlateau",
-    "EarlyStopping",
-    "BatchNormalization"
+    "Heavy augmentation (flip, rotate, jitter, erase)",
+    "Gradient clipping (max_norm=1.0)",
+    "BatchNorm frozen during fine-tuning",
+    "EarlyStopping with best-weight restoration"
   ]
 }

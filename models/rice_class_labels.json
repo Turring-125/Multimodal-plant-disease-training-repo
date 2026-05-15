@@ -1,12 +1,8 @@
 {
-  "0": "bacterial_leaf_blight",
-  "1": "bacterial_leaf_streak",
-  "2": "bacterial_panicle_blight",
-  "3": "blast",
-  "4": "brown_spot",
-  "5": "dead_heart",
-  "6": "downy_mildew",
-  "7": "hispa",
-  "8": "normal",
-  "9": "tungro"
+  "0": "Bacterial Leaf Blight",
+  "1": "Brown Spot",
+  "2": "Healthy Rice Leaf",
+  "3": "Leaf Blast",
+  "4": "Leaf scald",
+  "5": "Sheath Blight"
 }

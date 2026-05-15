@@ -1,0 +1,410 @@
+{
+    "rice": [
+        {
+            "state": "HARYANA",
+            "district": "KARNAL",
+            "production": 1927.62
+        },
+        {
+            "state": "ANDHRA PRADESH",
+            "district": "WEST GODAVARI",
+            "production": 1693.91
+        },
+        {
+            "state": "ANDHRA PRADESH",
+            "district": "EAST GODAVARI",
+            "production": 1672.79
+        },
+        {
+            "state": "CHHATT|SGARH",
+            "district": "RAIPUR",
+            "production": 1520.95
+        },
+        {
+            "state": "BIHAR",
+            "district": "GAYA",
+            "production": 1505.74
+        },
+        {
+            "state": "PUNJAB",
+            "district": "AMRITSAR",
+            "production": 1436.0
+        },
+        {
+            "state": "TELANGANA",
+            "district": "NALGONDA",
+            "production": 1380.74
+        },
+        {
+            "state": "PUNJAB",
+            "district": "PATIALA",
+            "production": 1359.15
+        },
+        {
+            "state": "HIMACHAL PRADESH",
+            "district": "BILASPUR",
+            "production": 1295.71
+        },
+        {
+            "state": "PUNJAB",
+            "district": "LUDHIANA",
+            "production": 1283.25
+        },
+        {
+            "state": "TELANGANA",
+            "district": "KARIMNAGAR",
+            "production": 1182.07
+        },
+        {
+            "state": "WEST BENGAL",
+            "district": "MURSHIDABAD",
+            "production": 1178.19
+        },
+        {
+            "state": "JHARKHAND",
+            "district": "RANCHI",
+            "production": 1124.5
+        },
+        {
+            "state": "WEST BENGAL",
+            "district": "BANKURA",
+            "production": 1081.48
+        },
+        {
+            "state": "ANDHRA PRADESH",
+            "district": "KRISHNA",
+            "production": 1031.95
+        },
+        {
+            "state": "CHHATT|SGARH",
+            "district": "DURG",
+            "production": 983.21
+        },
+        {
+            "state": "TELANGANA",
+            "district": "NIZAMABAD",
+            "production": 968.95
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "BASTI",
+            "production": 955.54
+        },
+        {
+            "state": "ANDHRA PRADESH",
+            "district": "GUNTUR",
+            "production": 936.37
+        },
+        {
+            "state": "ODISHA",
+            "district": "KORAPUT",
+            "production": 898.1
+        }
+    ],
+    "wheat": [
+        {
+            "state": "HARYANA",
+            "district": "KARNAL",
+            "production": 2536.62
+        },
+        {
+            "state": "RAJASTHAN",
+            "district": "GANGANAGAR",
+            "production": 2138.57
+        },
+        {
+            "state": "PUNJAB",
+            "district": "AMRITSAR",
+            "production": 1791.0
+        },
+        {
+            "state": "HARYANA",
+            "district": "ROHTAK",
+            "production": 1733.25
+        },
+        {
+            "state": "PUNJAB",
+            "district": "PATIALA",
+            "production": 1696.58
+        },
+        {
+            "state": "MADHYA PRADESH",
+            "district": "HOSHANGABAD",
+            "production": 1467.18
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "BASTI",
+            "production": 1391.74
+        },
+        {
+            "state": "PUNJAB",
+            "district": "LUDHIANA",
+            "production": 1364.1
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "GORAKHPUR",
+            "production": 1330.08
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "AZAMGARH",
+            "production": 1161.7
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "HARDOI",
+            "production": 1155.22
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "MORADABAD",
+            "production": 1101.13
+        },
+        {
+            "state": "PUNJAB",
+            "district": "JALANDHAR",
+            "production": 1095.85
+        },
+        {
+            "state": "PUNJAB",
+            "district": "GURDASPUR",
+            "production": 1041.0
+        },
+        {
+            "state": "RAJASTHAN",
+            "district": "KOTA",
+            "production": 1037.57
+        },
+        {
+            "state": "MADHYA PRADESH",
+            "district": "JABALPUR",
+            "production": 1037.13
+        },
+        {
+            "state": "MADHYA PRADESH",
+            "district": "VIDISHA",
+            "production": 1025.7
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "BUDAUN",
+            "production": 1013.67
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "SHAHJAHANPUR",
+            "production": 989.81
+        },
+        {
+            "state": "MADHYA PRADESH",
+            "district": "UJJAIN",
+            "production": 935.79
+        }
+    ],
+    "sugarcane": [
+        {
+            "state": "UTTAR PRADESH",
+            "district": "MEERUT",
+            "production": 2326.51
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "MUZAFFARNAGAR",
+            "production": 2113.77
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "KHERI",
+            "production": 2002.65
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "BIJNOR",
+            "production": 1681.51
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "SAHARANPUR",
+            "production": 1535.08
+        },
+        {
+            "state": "MAHARASHTRA",
+            "district": "KOLHAPUR",
+            "production": 1477.9
+        },
+        {
+            "state": "MAHARASHTRA",
+            "district": "PUNE",
+            "production": 1327.06
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "MORADABAD",
+            "production": 1171.08
+        },
+        {
+            "state": "MAHARASHTRA",
+            "district": "SOLAPUR",
+            "production": 1046.81
+        },
+        {
+            "state": "MAHARASHTRA",
+            "district": "SANGLI",
+            "production": 854.68
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "GONDA",
+            "production": 847.91
+        },
+        {
+            "state": "MAHARASHTRA",
+            "district": "SATARA",
+            "production": 798.38
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "BAREILLY",
+            "production": 776.6
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "DEORIA",
+            "production": 573.87
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "SHAHJAHANPUR",
+            "production": 371.08
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "BUDAUN",
+            "production": 331.78
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "BASTI",
+            "production": 303.7
+        },
+        {
+            "state": "UTTAR PRADESH",
+            "district": "HARDOI",
+            "production": 282.07
+        },
+        {
+            "state": "BIHAR",
+            "district": "AURANGABAD",
+            "production": 259.03
+        },
+        {
+            "state": "KARNATAKA",
+            "district": "MANDYA",
+            "production": 234.75
+        }
+    ],
+    "cotton": [
+        {
+            "state": "GUJARAT",
+            "district": "RAJKOT",
+            "production": 348.73
+        },
+        {
+            "state": "GUJARAT",
+            "district": "SURENDRANAGAR",
+            "production": 277.65
+        },
+        {
+            "state": "GUJARAT",
+            "district": "BHAVNAGAR",
+            "production": 240.85
+        },
+        {
+            "state": "GUJARAT",
+            "district": "JAMNAGAR",
+            "production": 199.17
+        },
+        {
+            "state": "TELANGANA",
+            "district": "ADILABAD",
+            "production": 182.74
+        },
+        {
+            "state": "ODISHA",
+            "district": "KALAHANDI",
+            "production": 176.93
+        },
+        {
+            "state": "ANDHRA PRADESH",
+            "district": "GUNTUR",
+            "production": 151.48
+        },
+        {
+            "state": "GUJARAT",
+            "district": "AMRELI",
+            "production": 150.3
+        },
+        {
+            "state": "MAHARASHTRA",
+            "district": "JALGAON",
+            "production": 150.28
+        },
+        {
+            "state": "TELANGANA",
+            "district": "NALGONDA",
+            "production": 149.19
+        },
+        {
+            "state": "ANDHRA PRADESH",
+            "district": "KURNOOL",
+            "production": 134.54
+        },
+        {
+            "state": "TELANGANA",
+            "district": "MEDAK",
+            "production": 123.38
+        },
+        {
+            "state": "MAHARASHTRA",
+            "district": "WARDHA",
+            "production": 113.13
+        },
+        {
+            "state": "BIHAR",
+            "district": "AURANGABAD",
+            "production": 106.16
+        },
+        {
+            "state": "MAHARASHTRA",
+            "district": "DHULE",
+            "production": 102.89
+        },
+        {
+            "state": "TELANGANA",
+            "district": "KARIMNAGAR",
+            "production": 101.28
+        },
+        {
+            "state": "TELANGANA",
+            "district": "KHAMMAM",
+            "production": 99.72
+        },
+        {
+            "state": "ODISHA",
+            "district": "KORAPUT",
+            "production": 96.12
+        },
+        {
+            "state": "MAHARASHTRA",
+            "district": "PARBHANI",
+            "production": 90.32
+        },
+        {
+            "state": "TELANGANA",
+            "district": "MAHABUBNAGAR",
+            "production": 87.19
+        }
+    ]
+}

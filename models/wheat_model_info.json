@@ -1,7 +1,8 @@
 {
   "crop": "wheat",
-  "architecture": "EfficientNetB0 (Transfer Learning)",
-  "input_size": 224,
+  "framework": "PyTorch",
+  "architecture": "EfficientNetV2S (torchvision pretrained on ImageNet)",
+  "input_size": 300,
   "num_classes": 15,
   "class_names": [
     "Aphid",
@@ -20,16 +21,18 @@
     "Tan spot",
     "Yellow Rust"
   ],
-  "validation_accuracy": 0.89,
-  "techniques_used": [
-    "Transfer Learning (EfficientNetB0)",
-    "Data Augmentation (Flip, Rotate, Zoom, Contrast, Brightness)",
-    "Progressive Fine-tuning",
-    "Class Weight Balancing",
+  "validation_accuracy": 0.9266666666666666,
+  "techniques": [
+    "Transfer Learning (EfficientNetV2S ImageNet weights)",
+    "PyTorch native Windows CUDA",
+    "Mixed Precision (torch.amp autocast + GradScaler)",
+    "Two-phase training: frozen head -> top-40% fine-tune",
+    "Cosine Annealing LR (phase 2) + ReduceLROnPlateau (phase 1)",
+    "WeightedRandomSampler + CrossEntropy class weights",
     "Label Smoothing (0.1)",
-    "Dropout (0.4)",
-    "ReduceLROnPlateau",
-    "EarlyStopping",
-    "BatchNormalization"
+    "Heavy augmentation (flip, rotate, jitter, erase)",
+    "Gradient clipping (max_norm=1.0)",
+    "BatchNorm frozen during fine-tuning",
+    "EarlyStopping with best-weight restoration"
   ]
 }

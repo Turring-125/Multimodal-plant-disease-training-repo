@@ -1,11 +1,15 @@
-# ─── Datasets (large files) ───
-rice paddy disease dataset/
+# ─── Datasets (Excluded as per request) ───
+Rice_Leaf_AUG/
+Sugarcane Leaf Disease Dataset/
+cotton dataset/
 wheat/
-paddy-disease-classification.zip
 
-# ─── Trained model weights (large .keras files) ───
-models/*.keras
-models/*.h5
+# ─── Models (Still included) ───
+# models/ is NOT ignored
+
+# ─── Zip files (Explicitly excluded) ───
+*.zip
+**/*.zip
 
 # ─── Python / Virtual Environment ───
 __pycache__/
