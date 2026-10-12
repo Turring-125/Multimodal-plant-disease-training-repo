@@ -1,0 +1,70 @@
+Variant: multimodal
+Test samples: 1171
+
+=== OVERALL ===
+                            precision    recall  f1-score   support
+
+rice_Bacterial Leaf Blight       1.00      0.98      0.99        91
+           rice_Brown Spot       0.97      0.99      0.98        94
+    rice_Healthy Rice Leaf       1.00      1.00      1.00        78
+           rice_Leaf Blast       0.97      0.98      0.97        90
+           rice_Leaf Scald       1.00      1.00      1.00       125
+        rice_Sheath Blight       1.00      1.00      1.00        62
+         sugarcane_Healthy       0.98      0.98      0.98        51
+          sugarcane_Mosaic       1.00      0.99      0.99        70
+          sugarcane_Redrot       1.00      0.98      0.99        96
+            sugarcane_Rust       0.99      1.00      0.99        80
+  sugarcane_Yellow Disease       0.98      1.00      0.99        60
+   cotton_Bacterial Blight       1.00      1.00      1.00        35
+         cotton_Curl Virus       1.00      1.00      1.00        42
+       cotton_Healthy Leaf       1.00      1.00      1.00        21
+   cotton_Herbicide Damage       1.00      1.00      1.00        49
+cotton_Leaf Hopper Jassids       1.00      1.00      1.00        29
+     cotton_Leaf Reddening       1.00      0.99      0.99        79
+   cotton_Leaf Variegation       0.95      1.00      0.97        19
+
+                  accuracy                           0.99      1171
+                 macro avg       0.99      0.99      0.99      1171
+              weighted avg       0.99      0.99      0.99      1171
+
+=== RICE ===
+                            precision    recall  f1-score   support
+
+rice_Bacterial Leaf Blight       1.00      0.98      0.99        91
+           rice_Brown Spot       0.98      0.99      0.98        94
+    rice_Healthy Rice Leaf       1.00      1.00      1.00        78
+           rice_Leaf Blast       0.97      0.98      0.97        90
+           rice_Leaf Scald       1.00      1.00      1.00       125
+        rice_Sheath Blight       1.00      1.00      1.00        62
+
+                  accuracy                           0.99       540
+                 macro avg       0.99      0.99      0.99       540
+              weighted avg       0.99      0.99      0.99       540
+
+=== SUGARCANE ===
+                          precision    recall  f1-score   support
+
+       sugarcane_Healthy       0.98      0.98      0.98        51
+        sugarcane_Mosaic       1.00      0.99      0.99        70
+        sugarcane_Redrot       1.00      0.98      0.99        96
+          sugarcane_Rust       0.99      1.00      0.99        80
+sugarcane_Yellow Disease       0.98      1.00      0.99        60
+
+               micro avg       0.99      0.99      0.99       357
+               macro avg       0.99      0.99      0.99       357
+            weighted avg       0.99      0.99      0.99       357
+
+=== COTTON ===
+                            precision    recall  f1-score   support
+
+   cotton_Bacterial Blight       1.00      1.00      1.00        35
+         cotton_Curl Virus       1.00      1.00      1.00        42
+       cotton_Healthy Leaf       1.00      1.00      1.00        21
+   cotton_Herbicide Damage       1.00      1.00      1.00        49
+cotton_Leaf Hopper Jassids       1.00      1.00      1.00        29
+     cotton_Leaf Reddening       1.00      0.99      0.99        79
+   cotton_Leaf Variegation       0.95      1.00      0.97        19
+
+                  accuracy                           1.00       274
+                 macro avg       0.99      1.00      1.00       274
+              weighted avg       1.00      1.00      1.00       274
