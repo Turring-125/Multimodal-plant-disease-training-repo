@@ -10,6 +10,11 @@ Key changes from v2:
 """
 
 import os
+import sys
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 import json
 import time
 import copy
@@ -607,14 +612,16 @@ def main():
             c_preds_r  = [remap.get(p, -1) for p in c_preds]
 
             crop_report = classification_report(c_labels_r, c_preds_r,
-                                                target_names=names_c)
+                                                labels=list(range(len(names_c))),
+                                                target_names=names_c,
+                                                zero_division=0)
             print(f"\n── {crop.upper()} ──")
             print(crop_report)
             fp_report.write(f"\n=== {crop.upper()} ===\n")
             fp_report.write(crop_report)
 
             # Confusion matrix PNG
-            cm = confusion_matrix(c_labels_r, c_preds_r)
+            cm = confusion_matrix(c_labels_r, c_preds_r, labels=list(range(len(names_c))))
             plt.figure(figsize=(max(8, len(names_c)), max(6, len(names_c))))
             sns.heatmap(cm, annot=True, fmt="d", cmap="Blues",
                         xticklabels=names_c, yticklabels=names_c)

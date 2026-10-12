@@ -26,6 +26,11 @@ Anti-leakage measures (per INSTRUCTIONS_v3 Part 8B.2):
 """
 
 import os
+import sys
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 import json
 import random
 import math
@@ -441,30 +446,31 @@ def scan_images(datasets):
     Walks all dataset folders and returns list of (image_path, crop, canonical_label).
     Skips unmappable folders.
     """
-    skip_dirs = {"train","test","valid","validation","data","rice_leaf_aug","images"}
     tasks = []
     for crop, folder in datasets.items():
         if not os.path.exists(folder):
             print(f"  [SKIP] Not found: {folder}")
             continue
         for root, dirs, files in os.walk(folder):
-            dirname = os.path.basename(root).lower()
-            if dirname in skip_dirs:
-                dirs[:] = [d for d in dirs if d.lower() not in skip_dirs]
+            # Only prune hidden directories and pycache
+            dirs[:] = [d for d in dirs if not d.startswith('.') and d != '__pycache__']
+
+            img_files = [f for f in files if f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp', '.bmp'))]
+            if not img_files:
                 continue
-            for f in files:
-                if not f.lower().endswith(('.jpg','.jpeg','.png','.webp','.bmp')):
+
+            disease_folder = os.path.basename(root)
+            canonical = normalize_label(crop, disease_folder)
+            if canonical is None:
+                parent = os.path.basename(os.path.dirname(root))
+                canonical = normalize_label(crop, parent)
+            if canonical is None:
+                if disease_folder in DISEASE_WINDOWS.get(crop, {}):
+                    canonical = disease_folder
+                else:
                     continue
-                disease_folder = os.path.basename(root)
-                canonical = normalize_label(crop, disease_folder)
-                if canonical is None:
-                    parent = os.path.basename(os.path.dirname(root))
-                    canonical = normalize_label(crop, parent)
-                if canonical is None:
-                    if disease_folder in DISEASE_WINDOWS.get(crop, {}):
-                        canonical = disease_folder
-                    else:
-                        continue
+
+            for f in img_files:
                 tasks.append((os.path.join(root, f), crop, canonical))
     return tasks
 

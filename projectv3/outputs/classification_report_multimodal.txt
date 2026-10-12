@@ -1,70 +1,108 @@
 Variant: multimodal
-Test samples: 1171
+Test samples: 3309
 
 === OVERALL ===
                             precision    recall  f1-score   support
 
-rice_Bacterial Leaf Blight       1.00      0.98      0.99        91
-           rice_Brown Spot       0.97      0.99      0.98        94
-    rice_Healthy Rice Leaf       1.00      1.00      1.00        78
-           rice_Leaf Blast       0.97      0.98      0.97        90
-           rice_Leaf Scald       1.00      1.00      1.00       125
-        rice_Sheath Blight       1.00      1.00      1.00        62
-         sugarcane_Healthy       0.98      0.98      0.98        51
-          sugarcane_Mosaic       1.00      0.99      0.99        70
-          sugarcane_Redrot       1.00      0.98      0.99        96
-            sugarcane_Rust       0.99      1.00      0.99        80
-  sugarcane_Yellow Disease       0.98      1.00      0.99        60
-   cotton_Bacterial Blight       1.00      1.00      1.00        35
-         cotton_Curl Virus       1.00      1.00      1.00        42
-       cotton_Healthy Leaf       1.00      1.00      1.00        21
-   cotton_Herbicide Damage       1.00      1.00      1.00        49
-cotton_Leaf Hopper Jassids       1.00      1.00      1.00        29
-     cotton_Leaf Reddening       1.00      0.99      0.99        79
-   cotton_Leaf Variegation       0.95      1.00      0.97        19
+               wheat_Aphid       0.97      0.88      0.92       128
+          wheat_Black Rust       0.78      0.93      0.85        68
+               wheat_Blast       0.94      0.91      0.92       111
+          wheat_Brown Rust       0.87      0.93      0.90        84
+     wheat_Common Root Rot       0.86      0.94      0.90        54
+wheat_Fusarium Head Blight       0.97      0.96      0.96        69
+             wheat_Healthy       0.97      0.95      0.96       199
+         wheat_Leaf Blight       0.76      0.63      0.69       124
+              wheat_Mildew       0.99      0.97      0.98       252
+                wheat_Mite       0.90      0.93      0.91        97
+            wheat_Septoria       0.97      0.97      0.97       215
+                wheat_Smut       0.99      0.98      0.98       363
+            wheat_Stem Fly       0.94      0.98      0.96        48
+            wheat_Tan Spot       0.72      0.83      0.77       128
+         wheat_Yellow Rust       0.99      1.00      0.99       228
+rice_Bacterial Leaf Blight       0.93      0.92      0.93        77
+           rice_Brown Spot       0.93      0.98      0.96        57
+    rice_Healthy Rice Leaf       1.00      1.00      1.00        80
+           rice_Leaf Blast       0.96      0.91      0.94       104
+           rice_Leaf Scald       0.94      1.00      0.97        97
+        rice_Sheath Blight       1.00      0.97      0.99        70
+         sugarcane_Healthy       0.94      0.98      0.96       106
+          sugarcane_Mosaic       0.99      0.94      0.96        85
+          sugarcane_Redrot       1.00      1.00      1.00        68
+            sugarcane_Rust       1.00      0.99      0.99        74
+  sugarcane_Yellow Disease       0.97      0.97      0.97        38
+   cotton_Bacterial Blight       0.92      1.00      0.96        33
+         cotton_Curl Virus       0.98      1.00      0.99        58
+       cotton_Healthy Leaf       1.00      0.97      0.99        40
+   cotton_Herbicide Damage       1.00      1.00      1.00        34
+cotton_Leaf Hopper Jassids       0.92      1.00      0.96        23
+     cotton_Leaf Reddening       1.00      0.93      0.97        76
+   cotton_Leaf Variegation       1.00      1.00      1.00        21
 
-                  accuracy                           0.99      1171
-                 macro avg       0.99      0.99      0.99      1171
-              weighted avg       0.99      0.99      0.99      1171
+                  accuracy                           0.94      3309
+                 macro avg       0.94      0.95      0.95      3309
+              weighted avg       0.95      0.94      0.94      3309
+
+=== WHEAT ===
+                            precision    recall  f1-score   support
+
+               wheat_Aphid       0.97      0.88      0.92       128
+          wheat_Black Rust       0.78      0.93      0.85        68
+               wheat_Blast       0.94      0.91      0.92       111
+          wheat_Brown Rust       0.87      0.93      0.90        84
+     wheat_Common Root Rot       0.86      0.94      0.90        54
+wheat_Fusarium Head Blight       0.97      0.96      0.96        69
+             wheat_Healthy       0.97      0.95      0.96       199
+         wheat_Leaf Blight       0.76      0.63      0.69       124
+              wheat_Mildew       0.99      0.97      0.98       252
+                wheat_Mite       0.90      0.93      0.91        97
+            wheat_Septoria       0.97      0.97      0.97       215
+                wheat_Smut       0.99      0.98      0.98       363
+            wheat_Stem Fly       0.94      0.98      0.96        48
+            wheat_Tan Spot       0.72      0.83      0.77       128
+         wheat_Yellow Rust       0.99      1.00      0.99       228
+
+                 micro avg       0.93      0.93      0.93      2168
+                 macro avg       0.91      0.92      0.91      2168
+              weighted avg       0.93      0.93      0.93      2168
 
 === RICE ===
                             precision    recall  f1-score   support
 
-rice_Bacterial Leaf Blight       1.00      0.98      0.99        91
-           rice_Brown Spot       0.98      0.99      0.98        94
-    rice_Healthy Rice Leaf       1.00      1.00      1.00        78
-           rice_Leaf Blast       0.97      0.98      0.97        90
-           rice_Leaf Scald       1.00      1.00      1.00       125
-        rice_Sheath Blight       1.00      1.00      1.00        62
+rice_Bacterial Leaf Blight       0.93      0.92      0.93        77
+           rice_Brown Spot       0.93      0.98      0.96        57
+    rice_Healthy Rice Leaf       1.00      1.00      1.00        80
+           rice_Leaf Blast       0.96      0.91      0.94       104
+           rice_Leaf Scald       0.95      1.00      0.97        97
+        rice_Sheath Blight       1.00      0.97      0.99        70
 
-                  accuracy                           0.99       540
-                 macro avg       0.99      0.99      0.99       540
-              weighted avg       0.99      0.99      0.99       540
+                  accuracy                           0.96       485
+                 macro avg       0.96      0.96      0.96       485
+              weighted avg       0.96      0.96      0.96       485
 
 === SUGARCANE ===
                           precision    recall  f1-score   support
 
-       sugarcane_Healthy       0.98      0.98      0.98        51
-        sugarcane_Mosaic       1.00      0.99      0.99        70
-        sugarcane_Redrot       1.00      0.98      0.99        96
-          sugarcane_Rust       0.99      1.00      0.99        80
-sugarcane_Yellow Disease       0.98      1.00      0.99        60
+       sugarcane_Healthy       0.94      0.98      0.96       106
+        sugarcane_Mosaic       0.99      0.94      0.96        85
+        sugarcane_Redrot       1.00      1.00      1.00        68
+          sugarcane_Rust       1.00      0.99      0.99        74
+sugarcane_Yellow Disease       0.97      0.97      0.97        38
 
-               micro avg       0.99      0.99      0.99       357
-               macro avg       0.99      0.99      0.99       357
-            weighted avg       0.99      0.99      0.99       357
+                accuracy                           0.98       371
+               macro avg       0.98      0.98      0.98       371
+            weighted avg       0.98      0.98      0.98       371
 
 === COTTON ===
                             precision    recall  f1-score   support
 
-   cotton_Bacterial Blight       1.00      1.00      1.00        35
-         cotton_Curl Virus       1.00      1.00      1.00        42
-       cotton_Healthy Leaf       1.00      1.00      1.00        21
-   cotton_Herbicide Damage       1.00      1.00      1.00        49
-cotton_Leaf Hopper Jassids       1.00      1.00      1.00        29
-     cotton_Leaf Reddening       1.00      0.99      0.99        79
-   cotton_Leaf Variegation       0.95      1.00      0.97        19
+   cotton_Bacterial Blight       0.92      1.00      0.96        33
+         cotton_Curl Virus       0.98      1.00      0.99        58
+       cotton_Healthy Leaf       1.00      0.97      0.99        40
+   cotton_Herbicide Damage       1.00      1.00      1.00        34
+cotton_Leaf Hopper Jassids       0.92      1.00      0.96        23
+     cotton_Leaf Reddening       1.00      0.93      0.97        76
+   cotton_Leaf Variegation       1.00      1.00      1.00        21
 
-                  accuracy                           1.00       274
-                 macro avg       0.99      1.00      1.00       274
-              weighted avg       1.00      1.00      1.00       274
+                  accuracy                           0.98       285
+                 macro avg       0.97      0.99      0.98       285
+              weighted avg       0.98      0.98      0.98       285

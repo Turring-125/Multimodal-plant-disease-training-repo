@@ -10,6 +10,11 @@ Output: dataset/weather_stats.npy  (shape: dict with keys 'mean', 'std', each [1
 """
 
 import os
+import sys
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 import json
 import numpy as np
 from tqdm import tqdm
